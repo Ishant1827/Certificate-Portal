@@ -354,22 +354,28 @@ function drawCertificate() {
 
     drawBackground();
 
-    // ============================
-    // NAME
-    // ============================
+   // ============================
+// NAME
+// ============================
 
-    writeText(
+ctx.save();
 
-        selectedStudent.Name,
+ctx.textAlign = "center";
 
-        544,
+ctx.textBaseline = "middle";
 
-        690,
+ctx.fillStyle = "#143A8C";
 
-        getFontSize(selectedStudent.Name,48)
+ctx.font = `bold ${getFontSize(selectedStudent.Name, 52)}px "Times New Roman"`;
 
-    );
+ctx.fillText(
+    selectedStudent.Name,
+    544,
+    705
+);
 
+ctx.restore();
+    
     // ============================
     // COLLEGE
     // ============================
