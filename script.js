@@ -386,9 +386,9 @@ ctx.restore();
 
         544,
 
-        800,
+        1000,
 
-        getFontSize(selectedStudent.College,28),
+        getFontSize(selectedStudent.College,44),
 
         "#333"
 
@@ -398,8 +398,8 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,520,892,20);
-writeText(selectedStudent.Year,725,892,20);
+writeText(selectedStudent.Branch,530,905,20);
+writeText(selectedStudent.Year,735,905,20);
 
 
     // ============================
