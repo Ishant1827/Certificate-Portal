@@ -384,9 +384,9 @@ ctx.restore();
 
         selectedStudent.College,
 
-        575,
+        580,
 
-        835,
+        840,
 
         getFontSize(selectedStudent.College,34),
 
@@ -398,28 +398,28 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,548,912,20);
-writeText(selectedStudent.Year,753,912,20);
+writeText(selectedStudent.Branch,550,912,20);
+writeText(selectedStudent.Year,756,912,20);
 
 
     // ============================
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(selectedStudent.Enrolment_Number,695,1385,20);
+    writeText(selectedStudent.Enrolment_Number,693,1385,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,398,970,20);
+writeText(selectedStudent.Duration,400,970,20);
 writeText(selectedStudent.Domain,790,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-   writeText(formatDate(selectedStudent.Start_Date),477,10250,18);
+writeText(formatDate(selectedStudent.Start_Date),477,10250,18);
 
 writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
@@ -441,7 +441,7 @@ writeText(formatDate(selectedStudent.End_Date),710,1025,18);
     // GRADE
     // ============================
 
-    writeText(selectedStudent.Grade,610,1330,32);
+    writeText(selectedStudent.Grade,610,1328,32);
 
     // ============================
     // CERTIFICATE ID
@@ -457,7 +457,7 @@ writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
         selectedStudent.Certificate_ID,
 
-        825,
+        821,
 
         113
 
@@ -473,8 +473,8 @@ ctx.textAlign = "left";
 
 ctx.fillText(
     "07 July 2026",
-    90,
-    340
+    82,
+    346
 );
 
     // ============================
@@ -488,7 +488,7 @@ if (signLoaded) {
         signImage,
 
         820,   // X (Left/Right)
-        1385,  // Y (Up/Down)
+        1382,  // Y (Up/Down)
 
         220,   // Width
         90     // Height
@@ -511,11 +511,11 @@ if (signLoaded) {
 
             800,
 
-            1220,
+            1218,
 
-            170,
+            175,
 
-            170
+            175
 
         );
 
