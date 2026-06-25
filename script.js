@@ -370,7 +370,7 @@ ctx.font = `bold ${getFontSize(selectedStudent.Name, 52)}px "Times New Roman"`;
 
 ctx.fillText(
     selectedStudent.Name,
-    565,
+    575,
     735
 );
 
@@ -384,9 +384,9 @@ ctx.restore();
 
         selectedStudent.College,
 
-        550,
+        565,
 
-        800,
+        820,
 
         getFontSize(selectedStudent.College,34),
 
@@ -398,8 +398,8 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,540,910,20);
-writeText(selectedStudent.Year,745,910,20);
+writeText(selectedStudent.Branch,545,912,20);
+writeText(selectedStudent.Year,750,912,20);
 
 
     // ============================
@@ -412,16 +412,16 @@ writeText(selectedStudent.Year,745,910,20);
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,390,970,20);
+writeText(selectedStudent.Duration,395,970,20);
 writeText(selectedStudent.Domain,790,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-   writeText(formatDate(selectedStudent.Start_Date),470,1040,18);
+   writeText(formatDate(selectedStudent.Start_Date),470,1030,18);
 
-writeText(formatDate(selectedStudent.End_Date),700,1040,18);
+writeText(formatDate(selectedStudent.End_Date),710,1030,18);
 
     function formatDate(value){
 
@@ -441,7 +441,7 @@ writeText(formatDate(selectedStudent.End_Date),700,1040,18);
     // GRADE
     // ============================
 
-    writeText(selectedStudent.Grade,610,1335,32);
+    writeText(selectedStudent.Grade,610,1332,32);
 
     // ============================
     // CERTIFICATE ID
@@ -457,9 +457,9 @@ writeText(formatDate(selectedStudent.End_Date),700,1040,18);
 
         selectedStudent.Certificate_ID,
 
-        840,
+        825,
 
-        110
+        113
 
     );
 
@@ -467,9 +467,13 @@ writeText(formatDate(selectedStudent.End_Date),700,1040,18);
     // DATE
     // ============================
 
+ctx.fillStyle = "#143A8C";
+ctx.font = "20px Times New Roman";
+ctx.textAlign = "left";
+
 ctx.fillText(
-    formatDate(selectedStudent.End_Date),
-    90,
+    "07 July 2026",
+    95,
     320
 );
 
@@ -483,8 +487,8 @@ if (signLoaded) {
 
         signImage,
 
-        720,   // X (Left/Right)
-        1210,  // Y (Up/Down)
+        825,   // X (Left/Right)
+        1385,  // Y (Up/Down)
 
         220,   // Width
         90     // Height
