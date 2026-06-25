@@ -384,9 +384,9 @@ ctx.restore();
 
         selectedStudent.College,
 
-        565,
+        575,
 
-        820,
+        835,
 
         getFontSize(selectedStudent.College,34),
 
@@ -398,30 +398,30 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,545,912,20);
-writeText(selectedStudent.Year,750,912,20);
+writeText(selectedStudent.Branch,548,912,20);
+writeText(selectedStudent.Year,753,912,20);
 
 
     // ============================
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(selectedStudent.Enrolment_Number,700,1385,20);
+    writeText(selectedStudent.Enrolment_Number,695,1385,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,395,970,20);
+writeText(selectedStudent.Duration,398,970,20);
 writeText(selectedStudent.Domain,790,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-   writeText(formatDate(selectedStudent.Start_Date),470,1030,18);
+   writeText(formatDate(selectedStudent.Start_Date),477,10250,18);
 
-writeText(formatDate(selectedStudent.End_Date),710,1030,18);
+writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
     function formatDate(value){
 
@@ -441,7 +441,7 @@ writeText(formatDate(selectedStudent.End_Date),710,1030,18);
     // GRADE
     // ============================
 
-    writeText(selectedStudent.Grade,610,1332,32);
+    writeText(selectedStudent.Grade,610,1330,32);
 
     // ============================
     // CERTIFICATE ID
@@ -473,8 +473,8 @@ ctx.textAlign = "left";
 
 ctx.fillText(
     "07 July 2026",
-    95,
-    320
+    90,
+    340
 );
 
     // ============================
@@ -487,7 +487,7 @@ if (signLoaded) {
 
         signImage,
 
-        825,   // X (Left/Right)
+        820,   // X (Left/Right)
         1385,  // Y (Up/Down)
 
         220,   // Width
