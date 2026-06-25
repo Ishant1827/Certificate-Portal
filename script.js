@@ -371,7 +371,7 @@ ctx.font = `bold ${getFontSize(selectedStudent.Name, 52)}px "Times New Roman"`;
 ctx.fillText(
     selectedStudent.Name,
     544,
-    725
+    735
 );
 
 ctx.restore();
@@ -386,9 +386,9 @@ ctx.restore();
 
         544,
 
-        770,
+        800,
 
-        getFontSize(selectedStudent.College,22),
+        getFontSize(selectedStudent.College,28),
 
         "#333"
 
