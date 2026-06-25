@@ -413,7 +413,7 @@ writeText(selectedStudent.Year,760,913,20);
     // ============================
 
 writeText(selectedStudent.Duration,400,970,20);
-writeText(selectedStudent.Domain,820,970,20);
+writeText(selectedStudent.Domain,845,970,20);
 
     // ============================
     // START DATE + END DATE
