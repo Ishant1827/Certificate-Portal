@@ -384,7 +384,7 @@ ctx.restore();
 
         selectedStudent.College,
 
-        588,
+        591,
 
         840,
 
@@ -398,8 +398,8 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,550,912,20);
-writeText(selectedStudent.Year,758,912,20);
+writeText(selectedStudent.Branch,550,913,20);
+writeText(selectedStudent.Year,758,913,20);
 
 
     // ============================
@@ -413,15 +413,15 @@ writeText(selectedStudent.Year,758,912,20);
     // ============================
 
 writeText(selectedStudent.Duration,400,970,20);
-writeText(selectedStudent.Domain,793,970,20);
+writeText(selectedStudent.Domain,807,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),485,1023,18);
+writeText(formatDate(selectedStudent.Start_Date),500,1020,18);
 
-writeText(formatDate(selectedStudent.End_Date),710,1023,18);
+writeText(formatDate(selectedStudent.End_Date),700,1020,18);
 
     function formatDate(value){
 
@@ -487,7 +487,7 @@ if (signLoaded) {
 
         signImage,
 
-        810,   // X (Left/Right)
+        800,   // X (Left/Right)
         1377,  // Y (Up/Down)
 
         220,   // Width
