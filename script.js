@@ -467,16 +467,11 @@ writeText(formatDate(selectedStudent.End_Date),700,1060,18);
     // DATE
     // ============================
 
-    ctx.fillText(
-
-        formatDate(selectedStudent.End_Date,)  
-
-
-        100,
-
-        300
-
-    );
+ctx.fillText(
+    formatDate(selectedStudent.End_Date),
+    100,
+    300
+);
 
     // ============================
     // SIGNATURE
