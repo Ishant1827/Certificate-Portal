@@ -384,7 +384,7 @@ ctx.restore();
 
         selectedStudent.College,
 
-        580,
+        585,
 
         840,
 
@@ -413,13 +413,13 @@ writeText(selectedStudent.Year,756,912,20);
     // ============================
 
 writeText(selectedStudent.Duration,400,970,20);
-writeText(selectedStudent.Domain,790,970,20);
+writeText(selectedStudent.Domain,793,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),477,10250,18);
+writeText(formatDate(selectedStudent.Start_Date),477,1250,18);
 
 writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
@@ -457,7 +457,7 @@ writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
         selectedStudent.Certificate_ID,
 
-        821,
+        815,
 
         113
 
@@ -474,7 +474,7 @@ ctx.textAlign = "left";
 ctx.fillText(
     "07 July 2026",
     82,
-    346
+    352
 );
 
     // ============================
@@ -488,7 +488,7 @@ if (signLoaded) {
         signImage,
 
         820,   // X (Left/Right)
-        1382,  // Y (Up/Down)
+        1377,  // Y (Up/Down)
 
         220,   // Width
         90     // Height
