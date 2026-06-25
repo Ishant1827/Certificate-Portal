@@ -384,7 +384,7 @@ ctx.restore();
 
         selectedStudent.College,
 
-        585,
+        588,
 
         840,
 
@@ -399,7 +399,7 @@ ctx.restore();
     // ============================
 
 writeText(selectedStudent.Branch,550,912,20);
-writeText(selectedStudent.Year,756,912,20);
+writeText(selectedStudent.Year,758,912,20);
 
 
     // ============================
@@ -419,9 +419,9 @@ writeText(selectedStudent.Domain,793,970,20);
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),477,1250,18);
+writeText(formatDate(selectedStudent.Start_Date),485,1023,18);
 
-writeText(formatDate(selectedStudent.End_Date),710,1025,18);
+writeText(formatDate(selectedStudent.End_Date),710,1023,18);
 
     function formatDate(value){
 
@@ -457,7 +457,7 @@ writeText(formatDate(selectedStudent.End_Date),710,1025,18);
 
         selectedStudent.Certificate_ID,
 
-        815,
+        808,
 
         113
 
@@ -487,7 +487,7 @@ if (signLoaded) {
 
         signImage,
 
-        820,   // X (Left/Right)
+        810,   // X (Left/Right)
         1377,  // Y (Up/Down)
 
         220,   // Width
