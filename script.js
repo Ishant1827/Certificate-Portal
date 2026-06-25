@@ -370,7 +370,7 @@ ctx.font = `bold ${getFontSize(selectedStudent.Name, 52)}px "Times New Roman"`;
 
 ctx.fillText(
     selectedStudent.Name,
-    544,
+    555,
     735
 );
 
@@ -386,9 +386,9 @@ ctx.restore();
 
         544,
 
-        1000,
+        820,
 
-        getFontSize(selectedStudent.College,44),
+        getFontSize(selectedStudent.College,40),
 
         "#333"
 
@@ -398,30 +398,30 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,530,905,20);
-writeText(selectedStudent.Year,735,905,20);
+writeText(selectedStudent.Branch,535,910,20);
+writeText(selectedStudent.Year,740,910,20);
 
 
     // ============================
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(selectedStudent.Enrolment_Number,705,1400,20);
+    writeText(selectedStudent.Enrolment_Number,705,1385,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,387,970,20);
-writeText(selectedStudent.Domain,760,970,20);
+writeText(selectedStudent.Duration,385,970,20);
+writeText(selectedStudent.Domain,785,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-   writeText(formatDate(selectedStudent.Start_Date),455,1045,20);
+   writeText(formatDate(selectedStudent.Start_Date),460,1060,18);
 
-writeText(formatDate(selectedStudent.End_Date),685,1045,20);
+writeText(formatDate(selectedStudent.End_Date),700,1060,18);
 
     function formatDate(value){
 
@@ -441,7 +441,7 @@ writeText(formatDate(selectedStudent.End_Date),685,1045,20);
     // GRADE
     // ============================
 
-    writeText(selectedStudent.Grade,610,1335,28);
+    writeText(selectedStudent.Grade,610,1330,32);
 
     // ============================
     // CERTIFICATE ID
@@ -457,9 +457,9 @@ writeText(formatDate(selectedStudent.End_Date),685,1045,20);
 
         selectedStudent.Certificate_ID,
 
-        900,
+        885,
 
-        78
+        92
 
     );
 
@@ -469,11 +469,12 @@ writeText(formatDate(selectedStudent.End_Date),685,1045,20);
 
     ctx.fillText(
 
-        selectedStudent.End_Date,
+        formatDate(selectedStudent.End_Date,)  
 
-        120,
 
-        275
+        100,
+
+        300
 
     );
 
@@ -483,20 +484,11 @@ writeText(formatDate(selectedStudent.End_Date),685,1045,20);
 
     if(signLoaded){
 
-        ctx.drawImage(
-
-            signImage,
-
-            700,
-
-            1245,
-
-            160,
-
-            80
-
-        );
-
+       ctx.fillText(
+    "07 July 2026",
+    100,
+    300
+);
     }
 
     // ============================
@@ -511,9 +503,9 @@ writeText(formatDate(selectedStudent.End_Date),685,1045,20);
 
             stampImage,
 
-            760,
+            800,
 
-            1185,
+            1220,
 
             170,
 
