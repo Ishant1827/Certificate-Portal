@@ -395,7 +395,6 @@ function drawCertificate() {
 writeText(selectedStudent.Branch,520,892,20);
 writeText(selectedStudent.Year,725,892,20);
 
-    );
 
     // ============================
     // ENROLMENT NUMBER
