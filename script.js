@@ -392,15 +392,8 @@ function drawCertificate() {
     // BRANCH + YEAR
     // ============================
 
-    writeText(
-
-        `${selectedStudent.Branch}   ${selectedStudent.Year}`,
-
-        544,
-
-        865,
-
-        21
+writeText(selectedStudent.Branch,520,892,20);
+writeText(selectedStudent.Year,725,892,20);
 
     );
 
@@ -408,65 +401,42 @@ function drawCertificate() {
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(
-
-        selectedStudent.Enrolment_Number,
-
-        544,
-
-        920,
-
-        20
-
-    );
+    writeText(selectedStudent.Enrolment_Number,705,1400,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-    writeText(
-
-        `${selectedStudent.Duration} Summer Training in ${selectedStudent.Domain}`,
-
-        544,
-
-        980,
-
-        21
-
-    );
+writeText(selectedStudent.Duration,387,970,20);
+writeText(selectedStudent.Domain,760,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-    writeText(
+   writeText(formatDate(selectedStudent.Start_Date),455,1045,20);
 
-        `${selectedStudent.Start_Date}   to   ${selectedStudent.End_Date}`,
+writeText(formatDate(selectedStudent.End_Date),685,1045,20);
 
-        544,
+    function formatDate(value){
 
-        1040,
+    const date = new Date(value);
 
-        20
+    if(isNaN(date)) return value;
 
-    );
+    return date.toLocaleDateString("en-GB",{
+        day:"2-digit",
+        month:"long",
+        year:"numeric"
+    });
+
+}
 
     // ============================
     // GRADE
     // ============================
 
-    writeText(
-
-        selectedStudent.Grade,
-
-        544,
-
-        1330,
-
-        30
-
-    );
+    writeText(selectedStudent.Grade,610,1335,28);
 
     // ============================
     // CERTIFICATE ID
