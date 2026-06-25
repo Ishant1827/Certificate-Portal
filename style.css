@@ -1,1 +1,701 @@
+/* =====================================================
+   INDIGO TRAININGS
+   Certificate Verification Portal
+===================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#edf2fb;
+
+    color:#222;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 20px;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.logo{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+.header h1{
+
+    font-size:40px;
+
+    color:#0F3E8C;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.header p{
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+/* ===========================
+   SEARCH CARD
+=========================== */
+
+.search-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+.search-title{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F3E8C;
+
+    margin-bottom:25px;
+
+}
+
+.search-title i{
+
+    color:#D4AF37;
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.search-box{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    height:58px;
+
+    border:2px solid #d9d9d9;
+
+    border-radius:12px;
+
+    padding:0 20px;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.search-box input:focus{
+
+    border-color:#0F3E8C;
+
+    box-shadow:0 0 10px rgba(15,62,140,.15);
+
+}
+
+.search-box button{
+
+    width:180px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0F3E8C;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#0b3272;
+
+}
+
+.search-box button i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+
+    display:none;
+
+    margin-top:20px;
+
+    color:#0F3E8C;
+
+    font-weight:600;
+
+    font-size:16px;
+
+}
+
+#loader i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   RESULT CARD
+=========================== */
+
+.result-card{
+
+    display:none;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+.result-header{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#16a34a;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.result-header i{
+
+    font-size:30px;
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.student-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.student-table tr{
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.student-table tr:last-child{
+
+    border-bottom:none;
+
+}
+
+.student-table td{
+
+    padding:16px 10px;
+
+    font-size:16px;
+
+}
+
+.student-table td:first-child{
+
+    width:35%;
+
+    font-weight:700;
+
+    color:#0F3E8C;
+
+}
+
+.student-table td:last-child{
+
+    color:#333;
+
+    font-weight:500;
+
+    word-break:break-word;
+
+}
+
+/* ===========================
+   BUTTON GROUP
+=========================== */
+
+.button-group{
+
+    display:flex;
+
+    gap:15px;
+
+    justify-content:center;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.button-group button{
+
+    min-width:180px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:#fff;
+
+}
+
+.button-group button i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   BUTTON COLORS
+=========================== */
+
+.preview-btn{
+
+    background:#0F3E8C;
+
+}
+
+.preview-btn:hover{
+
+    background:#0b3272;
+
+    transform:translateY(-3px);
+
+}
+
+.png-btn{
+
+    background:#16a34a;
+
+}
+
+.png-btn:hover{
+
+    background:#12833d;
+
+    transform:translateY(-3px);
+
+}
+
+.pdf-btn{
+
+    background:#dc2626;
+
+}
+
+.pdf-btn:hover{
+
+    background:#b91c1c;
+
+    transform:translateY(-3px);
+
+}
+
+.button-group button:active{
+
+    transform:scale(.97);
+
+}
+
+/* ===========================
+   CERTIFICATE PREVIEW
+=========================== */
+
+.preview-section{
+
+    display:none;
+
+    margin-top:40px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.preview-section h2{
+
+    color:#0F3E8C;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+#certificateCanvas{
+
+    width:100%;
+
+    max-width:900px;
+
+    border-radius:15px;
+
+    background:#ffffff;
+
+    border:2px solid #d9d9d9;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#0F3E8C;
+
+    color:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    text-align:left;
+
+}
+
+.footer-logo{
+
+    width:80px;
+
+}
+
+.footer-content h3{
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.footer-content p{
+
+    margin:8px 0;
+
+    font-size:15px;
+
+}
+
+.footer-content i{
+
+    color:#FFD54F;
+
+    width:20px;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0F3E8C;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e9eef7;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.search-box{
+
+flex-direction:column;
+
+}
+
+.search-box input{
+
+width:100%;
+
+}
+
+.search-box button{
+
+width:100%;
+
+}
+
+.button-group{
+
+flex-direction:column;
+
+}
+
+.button-group button{
+
+width:100%;
+
+}
+
+.student-table td{
+
+display:block;
+
+width:100%;
+
+padding:8px 0;
+
+}
+
+.student-table tr{
+
+display:block;
+
+margin-bottom:15px;
+
+padding-bottom:10px;
+
+}
+
+.footer-content{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.container{
+
+padding:20px 15px;
+
+}
+
+.logo{
+
+width:70px;
+
+}
+
+.header h1{
+
+font-size:28px;
+
+}
+
+.header p{
+
+font-size:15px;
+
+}
+
+.search-card,
+
+.result-card,
+
+.preview-section{
+
+padding:20px;
+
+}
+
+.preview-section h2{
+
+font-size:22px;
+
+}
+
+#certificateCanvas{
+
+max-width:100%;
+
+}
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.search-card,
+.result-card,
+.preview-section{
+
+animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
