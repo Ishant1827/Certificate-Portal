@@ -384,9 +384,9 @@ ctx.restore();
 
         selectedStudent.College,
 
-        591,
+        595,
 
-        840,
+        845,
 
         getFontSize(selectedStudent.College,34),
 
@@ -399,7 +399,7 @@ ctx.restore();
     // ============================
 
 writeText(selectedStudent.Branch,550,913,20);
-writeText(selectedStudent.Year,758,913,20);
+writeText(selectedStudent.Year,760,913,20);
 
 
     // ============================
@@ -413,13 +413,13 @@ writeText(selectedStudent.Year,758,913,20);
     // ============================
 
 writeText(selectedStudent.Duration,400,970,20);
-writeText(selectedStudent.Domain,807,970,20);
+writeText(selectedStudent.Domain,820,970,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),500,1020,18);
+writeText(formatDate(selectedStudent.Start_Date),507,1020,18);
 
 writeText(formatDate(selectedStudent.End_Date),700,1020,18);
 
@@ -487,7 +487,7 @@ if (signLoaded) {
 
         signImage,
 
-        800,   // X (Left/Right)
+        790,   // X (Left/Right)
         1377,  // Y (Up/Down)
 
         220,   // Width
@@ -513,9 +513,9 @@ if (signLoaded) {
 
             1218,
 
-            175,
+            190,
 
-            175
+            190
 
         );
 
