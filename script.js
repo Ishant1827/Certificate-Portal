@@ -371,7 +371,7 @@ ctx.font = `bold ${getFontSize(selectedStudent.Name, 52)}px "Times New Roman"`;
 ctx.fillText(
     selectedStudent.Name,
     575,
-    735
+    740
 );
 
 ctx.restore();
@@ -386,7 +386,7 @@ ctx.restore();
 
         595,
 
-        845,
+        850,
 
         getFontSize(selectedStudent.College,34),
 
@@ -406,22 +406,22 @@ writeText(selectedStudent.Year,760,913,20);
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(selectedStudent.Enrolment_Number,693,1385,20);
+    writeText(selectedStudent.Enrolment_Number,688,1390,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,400,970,20);
-writeText(selectedStudent.Domain,845,970,20);
+writeText(selectedStudent.Duration,400,973,20);
+writeText(selectedStudent.Domain,750,973,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),507,1020,18);
+writeText(formatDate(selectedStudent.Start_Date),507,1024,18);
 
-writeText(formatDate(selectedStudent.End_Date),700,1020,18);
+writeText(formatDate(selectedStudent.End_Date),700,1024,18);
 
     function formatDate(value){
 
@@ -441,7 +441,7 @@ writeText(formatDate(selectedStudent.End_Date),700,1020,18);
     // GRADE
     // ============================
 
-    writeText(selectedStudent.Grade,610,1328,32);
+    writeText(selectedStudent.Grade,610,1333,32);
 
     // ============================
     // CERTIFICATE ID
