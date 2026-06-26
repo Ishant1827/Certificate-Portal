@@ -398,28 +398,28 @@ ctx.restore();
     // BRANCH + YEAR
     // ============================
 
-writeText(selectedStudent.Branch,530,917,20);
-writeText(selectedStudent.Year,760,917,20);
+writeText(selectedStudent.Branch,520,921,20);
+writeText(selectedStudent.Year,760,921,20);
 
 
     // ============================
     // ENROLMENT NUMBER
     // ============================
 
-    writeText(selectedStudent.Enrolment_Number,680,1394,20);
+    writeText(selectedStudent.Enrolment_Number,680,1397,20);
 
     // ============================
     // DOMAIN + DURATION
     // ============================
 
-writeText(selectedStudent.Duration,400,977,20);
+writeText(selectedStudent.Duration,420,977,20);
 writeText(selectedStudent.Domain,730,977,20);
 
     // ============================
     // START DATE + END DATE
     // ============================
 
-writeText(formatDate(selectedStudent.Start_Date),507,1028,18);
+writeText(formatDate(selectedStudent.Start_Date),510,1028,18);
 
 writeText(formatDate(selectedStudent.End_Date),700,1028,18);
 
